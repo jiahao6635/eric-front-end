@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { routes as routesConfig } from "../../configs/routes";
-import Navbar from "../../views/HomeView/Navbar";
+import Header from "@/views/Home/Header";
 
 const PublicLayout = ({ children }: { children: React.ReactNode }) => {
   const location = useLocation();
@@ -11,18 +11,19 @@ const PublicLayout = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <div
-      className=" w-full  overflow-x-hidden flex flex-col items-center custom"
+      className=" w-full min-h-screen overflow-x-hidden flex flex-col items-center custom"
       style={{
-        background: showNavbar ? "#0e0d12" : "#fff",
+        background: "#020606",
       }}
     >
       <div
-        className="w-full"
+        className="w-full "
         style={{
-          maxWidth: showNavbar ? "1440px" : "100%",
+          maxWidth: "1440px",
         }}
       >
-        {children}
+        <Header />
+        <div className="w-full px-[120px]">{children}</div>
       </div>
     </div>
   );

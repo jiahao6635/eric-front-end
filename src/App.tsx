@@ -11,7 +11,6 @@ import {
 import { routes as routesConfig } from "./configs/routes";
 import LoginView from "./views/loginView";
 import { useUserStore } from "./stores/userStore";
-import Navbar from "./views/HomeView/Navbar";
 
 function App() {
   const token = useUserStore((state: any) => state.token);
@@ -43,7 +42,7 @@ const renderRoutes = (routes) => {
 
     return (
       <Route key={index} path={route.path} element={route.component}>
-        {route.children && renderRoutes(route.children)} 
+        {route.children && renderRoutes(route.children)}
       </Route>
     );
   });
@@ -53,7 +52,6 @@ function AppContent() {
   const location = useLocation();
   return (
     <div className="w-full h-full">
-      {location?.pathname == "/home" && <Navbar></Navbar>}
       <Routes>{renderRoutes(routesConfig)}</Routes>
     </div>
   );

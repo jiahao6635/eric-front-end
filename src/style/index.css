@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  font-family: "Poppins", sans-serif !important;
+  font-family: "RobotoMono", sans-serif !important;
 }
 html,
 body {
@@ -35,6 +35,31 @@ body::-webkit-scrollbar {
   font-family: "Poppins";
   font-weight: 700;
   src: url("../font/poppins/Poppins-Bold.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "RobotoMono";
+  font-weight: 700;
+  src: url("../font/robotoMono/RobotoMono-Bold.ttf") format("woff2");
+}
+@font-face {
+  font-family: "RobotoMono";
+  font-weight: 400;
+  src: url("../font/robotoMono/RobotoMono-Regular.ttf") format("woff2");
+}
+@font-face {
+  font-family: "RobotoMono";
+  font-weight: 500;
+  src: url("../font/robotoMono/RobotoMono-Medium.ttf") format("woff2");
+}
+@font-face {
+  font-family: "RobotoMono";
+  font-weight: 600;
+  src: url("../font/robotoMono/RobotoMono-SemiBold.ttf") format("woff2");
+}
+
+.setFontRobotoMono {
+  font-family: "RobotoMono", sans-serif;
 }
 
 .hide-scrollbar {
