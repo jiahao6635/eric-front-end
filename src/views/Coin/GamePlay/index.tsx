@@ -1,6 +1,8 @@
 import Tab from "@/components/Tab";
 import { useState } from "react";
 import GameView from "./GameView";
+import Comments from "./Comments";
+import Proposal from "./Proposal";
 
 const GamePlay = () => {
   const [tabs, setTabs] = useState([
@@ -8,7 +10,7 @@ const GamePlay = () => {
       name: "Game Play",
     },
     {
-      name: "Comements",
+      name: "Comments",
       num: 1234,
     },
     {
@@ -25,6 +27,8 @@ const GamePlay = () => {
 
       <div className="w-full pt-[24px]">
         {activeTab?.name === "Game Play" && <GameView />}
+        {activeTab?.name === "Comments" && <Comments />}
+        {activeTab?.name === "Proposal" && <Proposal />}
       </div>
     </div>
   );
