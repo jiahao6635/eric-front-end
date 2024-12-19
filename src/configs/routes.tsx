@@ -2,6 +2,7 @@ import LoginView from "../views/loginView";
 import Home1 from "@/views/Home";
 import PublicLayout from "@/components/PublicLayout";
 import Coin from "@/views/Coin";
+import CreateToken from "@/views/Home/CreateToken";
 
 export const routes = [
   {
@@ -37,6 +38,15 @@ export const routes = [
     component: (
       <PublicLayout>
         <Coin />
+      </PublicLayout>
+    ),
+  },
+  {
+    path: "/create-token",
+    type: "public",
+    component: (
+      <PublicLayout>
+        <CreateToken />
       </PublicLayout>
     ),
   },

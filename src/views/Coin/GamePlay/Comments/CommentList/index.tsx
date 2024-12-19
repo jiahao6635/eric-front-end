@@ -22,7 +22,7 @@ const CommentItem = ({
   onReply: (parentId: string, content: string) => void;
   level?: number;
 }) => {
-  const [showReplyInput, setShowReplyInput] = useState(true);
+  const [showReplyInput, setShowReplyInput] = useState(false);
   const [replyContent, setReplyContent] = useState("");
 
   const handleReply = () => {
@@ -53,12 +53,12 @@ const CommentItem = ({
             {comment.content}
           </p>
         </div>
-        <button
+        {/* <button
           onClick={() => setShowReplyInput(!showReplyInput)}
           className="w-[51px] h-[30px] rounded-[8px] text-[12px] bg-[#0f1515] text-[#fff] hover:bg-[#323737] border-[1px] border-solid border-[#404444]"
         >
           Reply
-        </button>
+        </button> */}
 
         <ModelPopup
           open={showReplyInput}
