@@ -3,6 +3,7 @@ import Home1 from "@/views/Home";
 import PublicLayout from "@/components/PublicLayout";
 import Coin from "@/views/Coin";
 import CreateToken from "@/views/Home/CreateToken";
+import CreateGame from "@/views/CreateGame";
 
 export const routes = [
   {
@@ -47,6 +48,15 @@ export const routes = [
     component: (
       <PublicLayout>
         <CreateToken />
+      </PublicLayout>
+    ),
+  },
+  {
+    path: "/create-game",
+    type: "public",
+    component: (
+      <PublicLayout>
+        <CreateGame />
       </PublicLayout>
     ),
   },
