@@ -2,7 +2,7 @@ import SearchInput from "@/components/input";
 import tokenIcon from "@/assets/fun/tokenIcon.png";
 import { useState } from "react";
 import { CircleAlert } from "lucide-react";
-import ForgeButton from "@/views/Home/ForgeButton";
+import ForgeButton from "@/components/GlowButton";
 
 const SellOrBuy = () => {
   const [currentType, setCurrentType] = useState<"buy" | "sell">("buy");

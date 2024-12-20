@@ -4,7 +4,7 @@ import SearchInput from "@/components/input";
 import ConnectButton from "@/assets/fun/ConnectButton.png";
 import { Search } from "lucide-react";
 import HowToFun from "./HowToFun";
-import ForgeButton from "../ForgeButton";
+import ForgeButton from "../../../components/GlowButton";
 
 const Header = () => {
   const [show, setShow] = useState(true);
