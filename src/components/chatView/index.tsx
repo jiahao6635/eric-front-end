@@ -66,8 +66,8 @@ export const ChatInterface: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col h-screen bg-[#111919]">
-      <div className="flex-1 overflow-y-auto p-4 space-y-4">
+    <div className="flex flex-col flex-1 bg-[#111919]">
+      <div className="flex-1 overflow-y-auto">
         {messages.map((message, index) => (
           <MessageBox
             key={index}
