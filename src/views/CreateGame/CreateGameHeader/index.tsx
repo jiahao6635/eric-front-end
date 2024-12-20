@@ -1,4 +1,4 @@
-import ForgeButton from "@/views/Home/ForgeButton";
+import ForgeButton from "@/components/GlowButton";
 import { ChevronLeft } from "lucide-react";
 interface CreateGameHeaderProps {
   onBack: () => void;

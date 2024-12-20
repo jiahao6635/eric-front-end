@@ -1,7 +1,7 @@
 import CustomTextarea from "@/components/Textarea";
 import { useState } from "react";
 import { CommentList } from "./CommentList";
-import ForgeButton from "@/views/Home/ForgeButton";
+import ForgeButton from "@/components/GlowButton";
 
 const Comments = () => {
   const [comments, setComments] = useState([]);

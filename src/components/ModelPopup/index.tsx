@@ -1,7 +1,7 @@
 import { Modal } from "@mui/material";
 import React from "react";
 import { X } from "lucide-react";
-import ForgeButton from "@/views/Home/ForgeButton";
+import ForgeButton from "@/components/GlowButton";
 
 interface ModelPopupProps {
   className?: string;

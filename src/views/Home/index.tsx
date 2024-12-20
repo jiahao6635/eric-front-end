@@ -1,5 +1,5 @@
 import homeBg from "@/assets/fun/homeBg.png";
-import ForgeButton from "./ForgeButton";
+import ForgeButton from "../../components/GlowButton";
 import GameItem from "./GameItem";
 import SortMenu from "@/components/SortMenu";
 
