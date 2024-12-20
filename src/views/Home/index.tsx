@@ -14,7 +14,7 @@ const Home = () => {
       className="max-w-[1440px] h-full min-h-screen bg-[#020606] flex items-center flex-col"
     >
       <div className="mt-[83px] flex items-center flex-col">
-        <ForgeButton></ForgeButton>
+        <ForgeButton>Forge a New Game</ForgeButton>
 
         <div className="mt-[40px] text-[#fff] text-[24px] font-bold">
           Almost jeet

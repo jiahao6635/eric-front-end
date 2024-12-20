@@ -1,7 +1,18 @@
-const ForgeButton = ({ className }: { className?: string }) => {
+const ForgeButton = ({
+  className,
+  onClick,
+  children,
+}: {
+  className?: string;
+  onClick?: () => void;
+  children?: React.ReactNode;
+}) => {
   return (
     <div
-      className="w-[240px] h-[56px]  rounded-[12px] flex cursor-pointer items-center text-[18px] justify-center font-bold"
+      onClick={onClick}
+      className={`w-[240px] h-[56px]  rounded-[12px] flex cursor-pointer items-center text-[18px] justify-center font-bold   transition-all duration-300
+                   hover:shadow-[0_0_25px_rgba(64,231,209,0.8)]
+                  ${className}`}
       style={{
         border: "1px solid #09FFF0",
         background:
@@ -12,7 +23,7 @@ const ForgeButton = ({ className }: { className?: string }) => {
           "linear-gradient(0deg, rgba(9, 255, 240, 0.15), rgba(9, 255, 240, 0.15)),radial-gradient(107.05% 92.73% at 50.34% 50.91%, rgba(9, 255, 240, 0.5) 0%, rgba(9, 255, 240, 0) 100%)",
       }}
     >
-      Forge a New Game
+      {children}
     </div>
   );
 };

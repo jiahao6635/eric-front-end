@@ -1,7 +1,7 @@
 import { Modal } from "@mui/material";
 import React from "react";
 import { X } from "lucide-react";
-import GlowButton from "../GlowButton";
+import ForgeButton from "@/views/Home/ForgeButton";
 
 interface ModelPopupProps {
   className?: string;
@@ -39,12 +39,12 @@ const ModelPopup = ({
           {children}
 
           <div className="w-full  bg-[#293030] mt-[24px]">
-            <GlowButton
-              className="!w-full !h-[56px] rounded-[12px] text-[18px] bg-[#0f1515] text-[#fff] hover:bg-[#fff] hover:text-[#0f1515] border-[1px] border-solid border-[#404444]"
+            <ForgeButton
+              className="!w-full !h-[56px] rounded-[12px] text-[18px]  bg-[#0f1515] text-[#000] hover:bg-[#fff] hover:text-[#0f1515] border-[1px] border-solid border-[#404444]"
               onClick={onClickSubmit}
             >
               {buttonText}
-            </GlowButton>
+            </ForgeButton>
           </div>
         </div>
       </div>

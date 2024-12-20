@@ -22,6 +22,7 @@ const HowToFun = ({
         title="How to fun"
         className="!w-[640px] "
         onClickSubmit={handleClick}
+        buttonText="I’m ready to fun"
       >
         <div className="w-full mt-[24px]">
           <div className=" w-[592px] h-[114px] rounded-[16px] bg-[#1e2323] text-[#d2d3d3] text-[14px] p-[24px]">

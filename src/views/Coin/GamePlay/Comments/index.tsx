@@ -1,7 +1,7 @@
-import GlowButton from "@/components/GlowButton";
 import CustomTextarea from "@/components/Textarea";
 import { useState } from "react";
 import { CommentList } from "./CommentList";
+import ForgeButton from "@/views/Home/ForgeButton";
 
 const Comments = () => {
   const [comments, setComments] = useState([]);
@@ -15,12 +15,12 @@ const Comments = () => {
           onChange={(e) => setValue(e.target.value)}
         />
 
-        <GlowButton
+        <ForgeButton
           className="absolute bottom-[14px] right-[16px] !w-[88px] !h-[30px] !text-[12px] !rounded-[8px]"
           onClick={() => {}}
         >
           Submit
-        </GlowButton>
+        </ForgeButton>
       </div>
 
       <CommentList />

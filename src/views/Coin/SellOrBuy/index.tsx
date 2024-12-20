@@ -2,7 +2,7 @@ import SearchInput from "@/components/input";
 import tokenIcon from "@/assets/fun/tokenIcon.png";
 import { useState } from "react";
 import { CircleAlert } from "lucide-react";
-import GlowButton from "@/components/GlowButton";
+import ForgeButton from "@/views/Home/ForgeButton";
 
 const SellOrBuy = () => {
   const [currentType, setCurrentType] = useState<"buy" | "sell">("buy");
@@ -93,9 +93,9 @@ const SellOrBuy = () => {
         </div>
 
         <div className="w-full flex justify-center mt-[16px]">
-          <GlowButton onClick={() => {}} className="!text-[18px]">
+          <ForgeButton onClick={() => {}} className="!text-[18px]">
             Buy Tokens
-          </GlowButton>
+          </ForgeButton>
         </div>
       </div>
     </div>
